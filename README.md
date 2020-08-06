@@ -8,3 +8,7 @@ AI_sub_projects and Study
 - cuda 10.1
 
 ### utils code 
+
+
+### 논문 정리 
+[Feature Pyramid Network](https://github.com/KangHoyong/AI_sub_projects/issues/1)
