@@ -1,0 +1,6 @@
+# folder 
+CarDataset/
+
+# os generated files 
+.DS_Store*
+
