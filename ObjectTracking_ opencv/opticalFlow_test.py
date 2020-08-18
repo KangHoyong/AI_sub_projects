@@ -54,7 +54,7 @@ while(1):
         mask = cv2.line(mask, (x1, y1) , (x2, y2) , color[i].tolist(), 2)
 
         # 5 frame 마다 특징점을 찾는 샘플을 제공한다. 또한 광학 흐름 포인트를 역 확인해서(Backward_check) 좋은 점만 선택
-        frame = cv2.circle(frame, (x1, y1) , 5, color[i].tolist(), -1)
+        frame = cv2.circle(frame, (x1, y1) , 1, color[i].tolist(), -1)
     
 
     print("frame test size : " , frame.shape)
