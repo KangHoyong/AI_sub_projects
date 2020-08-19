@@ -1,6 +1,11 @@
 # folder 
 CarDataset/
+./ObjectTracking_opencv/videoDataset/
+
 
 # os generated files 
-.DS_Store*
+*.DS_Store
 
+# hide image file 
+opticalfb.png
+opticalhsv.png
