@@ -3,7 +3,7 @@ from pprint import pprint
 
 # test code
 # fix add json_train_path 8/19 
-def jsonDataReadOneData(json_data, imgRead, json_train_path) : 
+def jsonDataReadOneData(json_train_path) : 
 
     jsonData = [] 
     with open(json_train_path) as f :
@@ -17,6 +17,7 @@ def jsonDataReadOneData(json_data, imgRead, json_train_path) :
     annos = annotations["ann"]
     bbox = annos["bboxes"]
     labels = annos["labels"]
+
 
     return fileName , bbox, labels
 

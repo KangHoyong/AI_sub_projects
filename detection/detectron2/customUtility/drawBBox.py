@@ -24,12 +24,12 @@ def drawBBoxOneImageTest(img, fileName, bbox , labels, tragetClasses) :
         p2 = y1 - 10 
         print("Test" , p1, p2)
         id= tragetClasses[labelsNumber]
-        
-        i img = cv2.putText(img, id, (p1, p2), cv2.FONT_HERSHEY_SIMPLEX, 1.3, (0,255,0), 2)
+        img = cv2.rectangle(img, (x1, y1) , (x2, y2) , (0,255,0), 3)
+        img = cv2.putText(img, id, (p1, p2), cv2.FONT_HERSHEY_SIMPLEX, 1.3, (0,255,0), 2)
 
     cv2.imshow("windows" , img)
     if cv2.waitKey(0) & 0xFF == ord('q'):
-        exit()mg = cv2.rectangle(img, (x1, y1) , (x2, y2) , (0,255,0), 3)
+        exit()
        
 
 
