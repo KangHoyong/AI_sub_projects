@@ -7,10 +7,11 @@ from matplotlib import pyplot as plt
 
 from albumentations.pytorch.transforms import ToTensorV2
 
-from jsonUtility import jsonDataReadOneData
+from albumentationVis import visualizes
+from jsonUtility import jsonDataReadOneData 
 
 # global value 
-# json_train_path = "./CarDataset/dataset/car_train/car_train.json" 
+json_train_path = "./CarDataset/dataset/car_train/car_train.json" 
 
 # fix code : test one image change more data 
 
@@ -30,57 +31,25 @@ traget_classes = [
     "Motorcycle"
 ]
 
-random.seed(7)
-
-BOX_COLOR = (0,255,0) # gren
-TEXT_COLOR = (255,255,255) # white 
-
-def visualizeBBox(image, bbox, class_name , color=BOX_COLOR, thickness = 2) :
-
-    # visualizes a single bounding box on the image 
-    print("test debug : "  ,bbox, class_name)
-
-    # image location and bbox
-    x1, y1, x2, y2 = bbox
-    x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
-    cv2.rectangle(image, (x1, y1), (x2, y2), color=color, thickness=thickness)
-
-    # text location
-    p1 = x1
-    p2 = y1- 10 
-    cv2.putText(image, class_name, (p1, p2), cv2.FONT_HERSHEY_SIMPLEX, 1.3, (0,255,0), 2)
-    return image
-
-def visualizes(image , bboxes, category_ids, category_id_to_name) : 
-    
-    image = image.copy()
-    for bbox, category_id in zip(bboxes, category_ids) : 
-        class_name = category_id_to_name[category_id]
-        image = visualizeBBox(image, bbox, class_name)
-
-    cv2.imshow("windows", image)
-    cv2.imwrite("transformsTestImage.png", image)
-    if cv2.waitKey(0) & 0xFF == ord("q") : 
-        exit()
-    
-    cv2.destroyAllWindows()
-    return 0 
-
 def main():
 
-    # fileName, bbox, labels = jsonDataReadOneData(json_train_path)
+    fileName, bbox, labels = jsonDataReadOneData(json_train_path)
     
     image = cv2.imread(imagePath)
     w, h = image.shape[:2]
 
     print("w , h debug -> ", w , h)
-    # test 위해서 수동으로 입력 
-    # 자동으로 가능하게 만들기 !! fix code
-    bboxes = [[1061, 906, 1213, 963], [946, 664, 1920, 1080]]
-    category_ids = [6, 1]
-    category_id_to_name = {6 : "LicensePlate" , 1 : "Car"}
+    bboxes = bbox
+    category_ids = labels
 
-    # visualizes(image, bboxes, category_ids, category_id_to_name)
+    bboxNumber = len(bboxes)
+    for i in range(bboxNumber) : 
+
+        labels_number = labels[i]
+        labels_id = traget_classes[labels_number]
+
+    print("debug >> " , labels_id)    
+    category_id_to_name = labels_id
 
     transform = A.Compose(
         [
@@ -101,7 +70,7 @@ def main():
         transformed['image'],
         transformed['bboxes'],
         transformed['category_ids'],
-        category_id_to_name,
+        category_id_to_name
     )
 
 if __name__ == "__main__":
