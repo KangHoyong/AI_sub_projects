@@ -19,7 +19,7 @@ CartoonGan Test code
 [Feature Pyramid Network](https://github.com/KangHoyong/AI_sub_projects/issues/1)
 
 
-### Action Recognition / Human action classification & detection
+# Action Recognition / Human action classification & detection
 #### GOAL : Slow Fast 논문 리뷰 및 구성 요소 이해 하기 
 
 BackGround 
