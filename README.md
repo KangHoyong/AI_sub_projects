@@ -1,6 +1,23 @@
 # AI_sub_projects
 AI_sub_projects and Study 
 
+### Detectron2 with Pytorch and customDataset 
+
+### CartoonGAN Test code with Pytorch (web <-> model)
+
+자바 스크립트 + 스프링 + DBA (JPA) 
+
+test server 구성 : local server 
+
+클라이언트 
+web -> input image -> server -> output image -> view(result image)
+
+서버 
+input image -> CartoonGan Model -> output image (web)  
+
+### 논문 정리 
+
+Feature Pyramid [review](https://github.com/KangHoyong/AI_sub_projects/issues/1)
 
 # 논문 리스트 (매일 업데이트 됨)
 
