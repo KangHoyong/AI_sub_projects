@@ -30,9 +30,9 @@ Activity Recognition은 기본적으로 3DCNN + Optical Flow로 구성된 아키
  - 3DCNN + Optical Flow 
    - 왜 Optical Flow 를 사용하는가 ?! 
 
-2. Non-local Neural Networks for Video Classification[Paper](https://github.com/facebookresearch/video-nonlocal-net)
+2. Non-local Neural Networks for Video Classification [Paper](https://github.com/facebookresearch/video-nonlocal-net) 
 
-- [논문 리뷰 영상](https://www.youtube.com/watch?v=ZM153wo3baA)
+- [Non local Neural Networks for video Classification 논문 리뷰 영상](https://www.youtube.com/watch?v=ZM153wo3baA)
 
 3. [Video-long-term-feature-banks](https://github.com/facebookresearch/video-long-term-feature-banks) 
 
