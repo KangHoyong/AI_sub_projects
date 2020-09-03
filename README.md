@@ -27,9 +27,10 @@ BackGround
 Activity Recognition은 기본적으로 3DCNN + Optical Flow로 구성된 아키텍처, CNN + LSTM로 구성된 아키텍처를 많이 사용한다. 
 
  - 3D ConvNet 
- 1. 3D ConvNets 
- 2. Two-Stream ConvNet 
- 3. Two-Stream Inflated 3D ConvNet -> I3D (Two-Stram)
+ 
+   1. 3D ConvNets 
+   2. Two-Stream ConvNet 
+   3. Two-Stream Inflated 3D ConvNet -> I3D (Two-Stram)
  
  - Non-local Neural Networks
  - video-long-term-feature-banks
