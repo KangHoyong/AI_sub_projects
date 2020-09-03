@@ -38,6 +38,13 @@ Activity Recognition은 기본적으로 3DCNN + Optical Flow로 구성된 아키
 #### 학습 방향
 
 1. 3D ConvNet 을 중점으로 파악 하고 논문 리뷰 예정 
+
+  - [Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset](https://arxiv.org/abs/1705.07750)  **I3D model**
+
+  - [A Closer Look at Spatiotemporal Convolutions for Action Recognition](https://arxiv.org/abs/1711.11248)  **R(2+1)D model** 
+
+  - [Large-scale weakly-supervised pre-training for video action recognition](https://arxiv.org/abs/1905.00561) **R(2+1)D model**
+
  - ConvNet + LSTM (CNN + LSTM) 
  - 3DCNN + Optical Flow 
 
@@ -58,7 +65,11 @@ In CVPR 2019.
 
 4. SlowFast 사용되 알고리즘 파악 하고 리뷰 하기 
 
-5. SlowFast 동작 어떤식으로 이루어지는가 대한 큰 그림 및 흐름 파악 하기 
+5. SlowFast 어떤식으로 Detection 을 하는가 ?! 
+
+6. BackBone 은 어떤것을 사용하는가 ?!
+
+7. SlowFast 동작 어떤식으로 이루어지는가 대한 큰 그림 및 흐름 파악 하기 
  
 #### Popular datasets
 
