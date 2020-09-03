@@ -23,21 +23,45 @@ CartoonGan Test code
 #### GOAL : Slow Fast 논문 리뷰 및 구성 요소 이해 하기 
 
 BackGround 
+
 Activity Recognition은 기본적으로 3DCNN + Optical Flow로 구성된 아키텍처, CNN + LSTM로 구성된 아키텍처를 많이 사용한다. 
 
  - 3D ConvNet 
- 1. ConvNet + LSTM 
-   - LSTM 사용하는 이유는 무엇인가 ?! 
-   - 어떤 모델을 많이 사용하는가 ?! 
-   
- 2. 3D ConvNets 
- 3. Two-Stream ConvNet
- 4. Two-Stream Inflated 3D ConvNet 
+ 1. 3D ConvNets 
+ 2. Two-Stream ConvNet 
+ 3. Two-Stream Inflated 3D ConvNet -> I3D (Two-Stram)
  
  - Non-local Neural Networks
+ - video-long-term-feature-banks
  
+#### 학습 방향
+
+1. 3D ConvNet 을 중점으로 파악 하고 논문 리뷰 예정 
+ - ConvNet + LSTM (CNN + LSTM) 
+ - 3DCNN + Optical Flow 
+
+2. [Non-local Neural Networks for Video Classification](https://github.com/facebookresearch/video-nonlocal-net)
+
+- [논문 리뷰 영상](https://www.youtube.com/watch?v=ZM153wo3baA)
+
+3. [Video-long-term-feature-banks](https://github.com/facebookresearch/video-long-term-feature-banks) 
+
+- [Chao-Yuan Wu](https://www.cs.utexas.edu/~cywu/),
+[Christoph Feichtenhofer](http://feichtenhofer.github.io/),
+Haoqi Fan,
+[Kaiming He](http://kaiminghe.com),
+[Philipp Kr&auml;henb&uuml;hl](http://www.philkr.net/),
+[Ross Girshick](http://rossgirshick.info)
+In CVPR 2019.
+[[Paper](https://arxiv.org/abs/1812.05038)]
+
+4. SlowFast 사용되 알고리즘 파악 하고 리뷰 하기 
+
+5. SlowFast 동작 어떤식으로 이루어지는가 대한 큰 그림 작어 및 흐르 파악 
+
+
  
- #### Popular datasets
+#### Popular datasets
 
 | Name  | Year  |  Number of classes |	#Clips |
 | ----- | ----- | ----------------- | ------- |
