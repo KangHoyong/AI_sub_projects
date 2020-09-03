@@ -1,24 +1,3 @@
-# AI_sub_projects
-AI_sub_projects and Study 
-
-### 1st 
-모바일 / 압축 가속 / CartoonGan Test 
-
-CartoonGan Test code
-
-### 개발환경
-- python 3.8.5
-- torch 1.5.0
-- torchvision 0.6.0
-- cuda 10.1
-
-### utils code 
-
-
-### 논문 정리 
-[Feature Pyramid Network](https://github.com/KangHoyong/AI_sub_projects/issues/1)
-
-
 # Action Recognition / Human action classification & detection
 #### GOAL : Slow Fast 논문 리뷰 및 구성 요소 이해 하기 
 
@@ -39,16 +18,19 @@ Activity Recognition은 기본적으로 3DCNN + Optical Flow로 구성된 아키
 
 1. 3D ConvNet 을 중점으로 파악 하고 논문 리뷰 예정 
 
-  - [Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset](https://arxiv.org/abs/1705.07750)  **I3D model**
+  - Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset [Paper](https://arxiv.org/abs/1705.07750)  **I3D model**
 
-  - [A Closer Look at Spatiotemporal Convolutions for Action Recognition](https://arxiv.org/abs/1711.11248)  **R(2+1)D model** 
+  - A Closer Look at Spatiotemporal Convolutions for Action Recognition [Paper](https://arxiv.org/abs/1711.11248)  **R(2+1)D model** 
 
-  - [Large-scale weakly-supervised pre-training for video action recognition](https://arxiv.org/abs/1905.00561) **R(2+1)D model**
+  - Large-scale weakly-supervised pre-training for video action recognition [Paper](https://arxiv.org/abs/1905.00561) **R(2+1)D model**
 
  - ConvNet + LSTM (CNN + LSTM) 
+   - LSTM 을 사용하게된 이유는 무엇인가 ?!
+   
  - 3DCNN + Optical Flow 
+   - 왜 Optical Flow 를 사용하는가 ?! 
 
-2. [Non-local Neural Networks for Video Classification](https://github.com/facebookresearch/video-nonlocal-net)
+2. Non-local Neural Networks for Video Classification[Paper](https://github.com/facebookresearch/video-nonlocal-net)
 
 - [논문 리뷰 영상](https://www.youtube.com/watch?v=ZM153wo3baA)
 
@@ -70,6 +52,8 @@ In CVPR 2019.
 6. BackBone 은 어떤것을 사용하는가 ?!
 
 7. SlowFast 동작 어떤식으로 이루어지는가 대한 큰 그림 및 흐름 파악 하기 
+
+8. 비디오 모델을 효울적으로 교육하기 위한 Multigird Method [Paper](https://arxiv.org/abs/1912.00998) **A Multigrid Method for Efficiently Training Video Models**
  
 #### Popular datasets
 
@@ -115,4 +99,6 @@ In CVPR 2019.
 | Representation Flow for Action Recognition                                            | 2019 |                 | 81%             | 78%               | Kinetics                                                                     |
 | Dance with Flow: Two-in-One Stream Action Recognition                                 | 2019 | 92%             |                 |                   | ImageNet                                                                     |
 
- 
+#### Inference speed
+<img width="501" alt="스크린샷 2020-09-03 오후 1 06 51" src="https://user-images.githubusercontent.com/9815703/92070242-776b4080-ede6-11ea-9233-a5de994fb744.png">
+
