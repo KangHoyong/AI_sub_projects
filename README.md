@@ -58,9 +58,7 @@ In CVPR 2019.
 
 4. SlowFast 사용되 알고리즘 파악 하고 리뷰 하기 
 
-5. SlowFast 동작 어떤식으로 이루어지는가 대한 큰 그림 작어 및 흐르 파악 
-
-
+5. SlowFast 동작 어떤식으로 이루어지는가 대한 큰 그림 및 흐름 파악 하기 
  
 #### Popular datasets
 
@@ -79,7 +77,6 @@ In CVPR 2019.
 |AVA|	2018|	80|	1.6M from 430 videos|
 |Youtube-8M Segments|	2019|	1000|	237k|
 |IG-Kinetics|	2019|	359|	65M|
-
 
 #### Popular publications
 
