@@ -18,6 +18,11 @@ def searchfile(dirPath, mode) :
             if os.path.isdir(fullFileName):
                 """
                 dataset1 
+
+                train 
+                   0 - img 
+                   1 - img 
+                   0 - 0
                   - 0 
                     |-- 0.jpg 
                   1.png
@@ -40,7 +45,6 @@ def getImageIds(imageFolder = None):
     """
     Explores a folder of image and get their ID from their file name
     Return a list of all image ID's image_folder 
-
     """
     # imageFolder = imgPath + imgName
     if imgName.endswith(".jpg") : 
@@ -48,4 +52,5 @@ def getImageIds(imageFolder = None):
 
 
 if __name__ == "__main__":
+    
     oneImageTestOpen(imagePath)

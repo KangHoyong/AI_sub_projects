@@ -2,6 +2,7 @@
 
 import random
 import cv2
+
 random.seed(7)
 
 traget_classes = [
@@ -35,7 +36,7 @@ def visualizeBBox(image, bbox, class_name , color=BOX_COLOR, thickness = 2) :
 def visualizes(image , bboxes, category_ids, category_id_to_name) : 
     
     image = image.copy()
-
+    
     print("debug 1>>" , bboxes)
     print("debug 1-1 >>" , category_ids)
 
@@ -54,14 +55,19 @@ def visualizes(image , bboxes, category_ids, category_id_to_name) :
 
     for new_bbox, category_id in zip(bboxes, category_ids) : 
         class_name = traget_classes[category_id]
-        print("debug 2 >> " ,new_bbox , class_name)
+        print("debug 2 >> " ,new_bbox , class_name) 
+        # car bbox info show ...
+        # if class_name == "Car" : 
+        #     # fix code 
+        #     print("bbox class_name : Car show .. ")
+        #     class_id = class_name
+        #     image = visualizeBBox(image, new_bbox, class_id)
         image = visualizeBBox(image, new_bbox, class_name)
-
     cv2.imshow("windows", image)
     cv2.imwrite("transformsTestImage.png", image)
     if cv2.waitKey(0) & 0xFF == ord("q") : 
         exit()
 
     # fix save point 
-
+    
     cv2.destroyAllWindows()

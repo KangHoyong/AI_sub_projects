@@ -19,6 +19,16 @@ json_train_path = "./CarDataset/dataset/car_train/car_train.json"
 
 imagePath = "./CarDataset/dataset/car_train/add_cctv/오송 사무실 1-20190927-092240-095240.mp4_snapshot_11.22_[2020.03.05_13.26.38].png" 
 
+
+def orgImageShow(imagePath) : 
+    
+    image = cv2.imread(imagePath)
+    cv2.imshow("windows" , image)
+    cv2.imwrite("orgImage.png", image)
+    if cv2.waitKey(0) & 0xFF == ord("q") : 
+        exit()
+
+
 traget_classes = [
     "_background_",
     "Car",
@@ -74,6 +84,7 @@ def main():
     )
 
 if __name__ == "__main__":
+    # orgImageShow(imagePath)
     main()
 
 # def getTrainTranforms() : 
