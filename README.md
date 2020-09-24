@@ -40,6 +40,10 @@ Action recognition [Paper list](https://paperswithcode.com/task/action-classific
 
 ### intelrealsense 
 
+최우선 환경설정 해서 python 에서 API MAC 에서 동작하기 안되면 리눅스 에서 개발 
+
+일다 감을 잡기 위해서 한대로 진행 나중에 2대 진행 
+
 1. 영상을 받아와서 뿌려 주는 부분을 체크 하고 
 2. depth , rgb API 영상 가져오기 
 3. 위치 맞추기 보는 시야각이 depth 랑 rgb랑 다름 
@@ -53,6 +57,8 @@ Action recognition [Paper list](https://paperswithcode.com/task/action-classific
 
 
 3. 카메라가 제대로 녹화가 되고 있는지 보여주는 visualize 하는 창 필요 (cv2)처럼 대신 이때는 rgb 카메라만 보여주면 됨 굳이 depth까지 visualize 할 필요 없음
+
+시간되면 UI만들기 
 
 
 즉 최종적으로 저장될 때는
