@@ -5,7 +5,7 @@ AI_sub_projects and Study
 
 ### CartoonGAN Test code with Pytorch (web <-> model)
 
-자바 스크립트 + 스프링 + DBA (JPA) 
+리엑트 + TS
 
 test server 구성 : local server 
 
@@ -14,6 +14,10 @@ web -> input image -> server -> output image -> view(result image)
 
 서버 
 input image -> CartoonGan Model -> output image (web)  
+
+
+### Simple Python Version Management install 
+Simple Python Version Management install[install page](https://github.com/KangHoyong/AI_sub_projects/issues/4)
 
 ### 논문 정리 
 
