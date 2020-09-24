@@ -17,7 +17,7 @@ input image -> CartoonGan Model -> output image (web)
 
 
 ### Simple Python Version Management install 
-Simple Python Version Management install[install page](https://github.com/KangHoyong/AI_sub_projects/issues/4)
+Simple Python Version Management install [install page](https://github.com/KangHoyong/AI_sub_projects/issues/4)
 
 ### 논문 정리 
 
